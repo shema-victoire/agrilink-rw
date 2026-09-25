@@ -113,7 +113,7 @@ function DetailPage() {
             <div className="flex gap-3">
               <TrendingUp className="mt-0.5 size-6 shrink-0 text-gap" aria-hidden="true" />
               <p className="text-lg font-bold leading-relaxed text-foreground">
-                Farmers selling {record.crop.toLowerCase()} at the farm-gate in {record.district} earn <span className="text-gap">{record.gapPct.toFixed(1)}% less</span> than at market.
+                In {record.district}, the market pays <span className="text-gap">{record.gapPct.toFixed(1)}% more</span> than the farm-gate for {record.crop.toLowerCase()}.
               </p>
             </div>
           </div>
