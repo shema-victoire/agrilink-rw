@@ -53,6 +53,6 @@ function IntroPage() {
           NISR Seasonal Agricultural Survey 2025
         </footer>
       </div>
-    </div>
+    </main>
   );
 }
