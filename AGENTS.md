@@ -13,3 +13,4 @@
 
 - Keep the bundled NISR JSON as the sole source of displayed price insights because the hackathon prototype must be deterministic and work without network access.
 - Use URL search parameters for crop and district selection because ranked findings should deep-link directly into a reproducible detail view.
+- Keep `/` as the public intro and `/overview` as the ranked analysis because the product needs a minimal entry screen before the data views.
