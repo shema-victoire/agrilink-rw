@@ -51,17 +51,19 @@ function DetailPage() {
   return (
     <div className="min-h-screen bg-background">
       <AppHeader />
-      <main className="mx-auto max-w-3xl px-4 py-7 sm:px-6 sm:py-10">
-        <Link to="/" className="mb-7 inline-flex min-h-11 items-center gap-2 rounded-md px-1 font-bold text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
-          <ArrowLeft className="size-5" aria-hidden="true" />
-          National overview
-        </Link>
-
-        <div className="mb-7">
-          <p className="mb-2 text-sm font-bold uppercase text-primary">Price comparison</p>
-          <h1 className="font-display text-3xl font-bold text-foreground sm:text-4xl">Crop &amp; district detail</h1>
-          <p className="mt-3 max-w-2xl text-lg leading-relaxed text-muted-foreground">Choose a crop and district to compare the prices farmers receive with prices at market.</p>
+      <section className="border-b border-border bg-primary text-primary-foreground">
+        <div className="mx-auto max-w-3xl px-4 py-7 sm:px-6 sm:py-10">
+          <Link to="/" className="mb-5 inline-flex min-h-11 items-center gap-2 rounded-md px-1 font-bold text-primary-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
+            <ArrowLeft className="size-5" aria-hidden="true" />
+            Back to overview
+          </Link>
+          <p className="mb-2 text-sm font-bold uppercase text-primary-foreground/75">Price comparison</p>
+          <h1 className="font-display text-3xl font-bold sm:text-4xl">Crop &amp; district detail</h1>
+          <p className="mt-3 max-w-2xl text-lg leading-relaxed text-primary-foreground/85">Choose a crop and district to compare the prices farmers receive with prices at market.</p>
         </div>
+      </section>
+      <main className="mx-auto max-w-3xl px-4 py-7 sm:px-6 sm:py-10">
+
 
         <section aria-label="Choose crop and district" className="grid gap-4 border-y border-border py-6 sm:grid-cols-2">
           <label className="block text-base font-bold text-foreground">
