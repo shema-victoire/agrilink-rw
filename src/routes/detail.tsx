@@ -51,22 +51,20 @@ function DetailPage() {
   return (
     <div className="min-h-screen bg-background">
       <AppHeader />
-      <section className="border-b border-border bg-primary text-primary-foreground">
-        <div className="mx-auto max-w-3xl px-4 py-7 sm:px-6 sm:py-10">
-          <Link to="/" className="mb-5 inline-flex min-h-11 items-center gap-2 rounded-md px-1 font-bold text-primary-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
+      <section className="border-b border-border">
+        <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 sm:py-12">
+          <Link to="/overview" className="mb-7 inline-flex min-h-11 items-center gap-2 rounded-md font-bold text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
             <ArrowLeft className="size-5" aria-hidden="true" />
             Back to overview
           </Link>
-          <p className="mb-2 text-sm font-bold uppercase text-primary-foreground/75">Price comparison</p>
-          <h1 className="font-display text-3xl font-bold sm:text-4xl">Crop &amp; district detail</h1>
-          <p className="mt-3 max-w-2xl text-lg leading-relaxed text-primary-foreground/85">Choose a crop and district to compare the prices farmers receive with prices at market.</p>
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.14em] text-primary">Price comparison</p>
+          <h1 className="font-display text-4xl font-extrabold text-foreground sm:text-5xl">Crop &amp; district detail</h1>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">Choose a crop and district to compare the prices farmers receive with prices at market.</p>
         </div>
       </section>
-      <main className="mx-auto max-w-3xl px-4 py-7 sm:px-6 sm:py-10">
-
-
-        <section aria-label="Choose crop and district" className="grid gap-4 border-y border-border py-6 sm:grid-cols-2">
-          <label className="block text-base font-bold text-foreground">
+      <main className="mx-auto max-w-4xl px-4 py-7 sm:px-6 sm:py-10">
+        <section aria-label="Choose crop and district" className="grid gap-4 rounded-lg border border-border bg-card p-4 sm:grid-cols-2 sm:p-5">
+          <label className="block text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground">
             Crop
             <select
               value={crop}
@@ -75,41 +73,41 @@ function DetailPage() {
                 const nextDistrict = districtsForCrop(nextCrop)[0] ?? "";
                 void navigate({ search: { crop: nextCrop, district: nextDistrict }, replace: true });
               }}
-              className="mt-2 min-h-13 w-full rounded-md border border-input bg-surface px-4 text-base font-semibold text-foreground outline-none focus:border-primary focus:ring-3 focus:ring-ring/20"
+              className="mt-2 min-h-13 w-full rounded-md border border-input bg-surface px-4 text-base font-semibold normal-case tracking-normal text-foreground outline-none focus:border-primary focus:ring-3 focus:ring-ring/20"
             >
               {CROPS.map((item) => <option key={item} value={item}>{item}</option>)}
             </select>
           </label>
-          <label className="block text-base font-bold text-foreground">
+          <label className="block text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground">
             District
             <select
               value={district}
               onChange={(event) => void navigate({ search: { crop, district: event.target.value }, replace: true })}
-              className="mt-2 min-h-13 w-full rounded-md border border-input bg-surface px-4 text-base font-semibold text-foreground outline-none focus:border-primary focus:ring-3 focus:ring-ring/20"
+              className="mt-2 min-h-13 w-full rounded-md border border-input bg-surface px-4 text-base font-semibold normal-case tracking-normal text-foreground outline-none focus:border-primary focus:ring-3 focus:ring-ring/20"
             >
               {districts.map((item) => <option key={item} value={item}>{item}</option>)}
             </select>
           </label>
         </section>
 
-        <section className="py-8" aria-labelledby="comparison-heading">
-          <div className="grid grid-cols-[minmax(0,1fr)_auto] items-end gap-4">
-            <div className="min-w-0">
-              <p className="text-sm font-bold uppercase text-muted-foreground">{record.district}</p>
-              <h2 id="comparison-heading" className="mt-1 font-display text-2xl font-bold text-foreground">{record.crop}</h2>
+        <section className="py-6 sm:py-8" aria-labelledby="comparison-heading">
+          <div className="grid gap-3 sm:grid-cols-[minmax(0,1fr)_16rem]">
+            <div className="rounded-lg border border-border bg-card p-5 sm:p-6">
+              <p className="text-xs font-bold uppercase tracking-[0.14em] text-muted-foreground">{record.district}</p>
+              <h2 id="comparison-heading" className="mt-3 font-display text-2xl font-extrabold text-foreground sm:text-3xl">{record.crop}</h2>
             </div>
-            <div className="shrink-0 text-right">
-              <p className="text-sm font-bold text-muted-foreground">Price gap</p>
-              <p className="font-display text-4xl font-bold text-gap sm:text-5xl">{record.gapPct.toFixed(1)}%</p>
+            <div className="rounded-lg border border-gap/35 bg-gap-soft p-5 sm:p-6 sm:text-right">
+              <p className="text-xs font-bold uppercase tracking-[0.14em] text-muted-foreground">Price gap</p>
+              <p className="mt-2 font-display text-4xl font-extrabold text-gap sm:text-5xl">{record.gapPct.toFixed(1)}%</p>
             </div>
           </div>
 
-          <div className="mt-8 space-y-7" aria-label="Farm-gate and market price bars">
+          <div className="mt-3 space-y-7 rounded-lg border border-border bg-card p-5 sm:p-7" aria-label="Farm-gate and market price bars">
             <PriceBar label="Farm-gate price" value={record.farmGatePrice} width={farmWidth} variant="farm" />
             <PriceBar label="Market price" value={record.marketPrice} width={marketWidth} variant="market" />
           </div>
 
-          <div className="mt-8 border-l-4 border-gap bg-gap-soft px-5 py-5">
+          <div className="mt-3 rounded-lg border border-gap/35 bg-gap-soft px-5 py-5 sm:px-6">
             <div className="flex gap-3">
               <TrendingUp className="mt-0.5 size-6 shrink-0 text-gap" aria-hidden="true" />
               <p className="text-lg font-bold leading-relaxed text-foreground">
@@ -119,7 +117,7 @@ function DetailPage() {
           </div>
 
           {!record.reliable && (
-            <p className="mt-5 flex items-start gap-2 text-sm font-medium text-muted-foreground">
+            <p className="mt-4 flex items-start gap-2 rounded-lg border border-border bg-card p-4 text-sm font-medium text-muted-foreground">
               <Info className="mt-0.5 size-4 shrink-0" aria-hidden="true" />
               Based on a limited sample — treat as directional.
             </p>
@@ -135,11 +133,11 @@ function PriceBar({ label, value, width, variant }: { label: string; value: numb
   return (
     <div>
       <div className="mb-2 grid grid-cols-[minmax(0,1fr)_auto] items-baseline gap-3">
-        <span className="truncate font-bold text-foreground">{label}</span>
+        <span className="truncate text-sm font-bold text-foreground">{label}</span>
         <span className="shrink-0 text-lg font-bold text-foreground">RwF {formatPrice(value)}<span className="text-sm font-medium text-muted-foreground">/kg</span></span>
       </div>
-      <div className="h-5 overflow-hidden rounded-sm bg-muted" role="img" aria-label={`${label}: ${formatPrice(value)} Rwandan francs per kilogram`}>
-        <div className={`h-full rounded-sm ${variant === "farm" ? "bg-farm" : "bg-market"}`} style={{ width }} />
+      <div className="h-3 overflow-hidden rounded-full bg-muted" role="img" aria-label={`${label}: ${formatPrice(value)} Rwandan francs per kilogram`}>
+        <div className={`h-full rounded-full ${variant === "farm" ? "bg-farm" : "bg-market"}`} style={{ width }} />
       </div>
     </div>
   );
