@@ -1,0 +1,1162 @@
+[
+  {
+    "crop": "Banana for beer",
+    "district": "Nyamasheke",
+    "farmGatePrice": 118.7,
+    "marketPrice": 440.0,
+    "gapPct": 270.7,
+    "reliable": false,
+    "farmGateSamples": 105,
+    "marketSamples": 10
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Nyanza",
+    "farmGatePrice": 104.1,
+    "marketPrice": 203.5,
+    "gapPct": 95.5,
+    "reliable": true,
+    "farmGateSamples": 93,
+    "marketSamples": 30
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Gakenke",
+    "farmGatePrice": 148.4,
+    "marketPrice": 249.3,
+    "gapPct": 68.0,
+    "reliable": true,
+    "farmGateSamples": 184,
+    "marketSamples": 60
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Ruhango",
+    "farmGatePrice": 124.4,
+    "marketPrice": 206.1,
+    "gapPct": 65.7,
+    "reliable": true,
+    "farmGateSamples": 152,
+    "marketSamples": 72
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Kamonyi",
+    "farmGatePrice": 130.8,
+    "marketPrice": 211.8,
+    "gapPct": 61.9,
+    "reliable": true,
+    "farmGateSamples": 161,
+    "marketSamples": 20
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Nyamagabe",
+    "farmGatePrice": 131.5,
+    "marketPrice": 197.1,
+    "gapPct": 49.9,
+    "reliable": true,
+    "farmGateSamples": 79,
+    "marketSamples": 17
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Karongi",
+    "farmGatePrice": 218.0,
+    "marketPrice": 286.1,
+    "gapPct": 31.2,
+    "reliable": true,
+    "farmGateSamples": 111,
+    "marketSamples": 46
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Rutsiro",
+    "farmGatePrice": 124.2,
+    "marketPrice": 159.3,
+    "gapPct": 28.3,
+    "reliable": true,
+    "farmGateSamples": 140,
+    "marketSamples": 66
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Kayonza",
+    "farmGatePrice": 138.0,
+    "marketPrice": 168.7,
+    "gapPct": 22.2,
+    "reliable": false,
+    "farmGateSamples": 73,
+    "marketSamples": 12
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Nyabihu",
+    "farmGatePrice": 131.9,
+    "marketPrice": 158.2,
+    "gapPct": 19.9,
+    "reliable": false,
+    "farmGateSamples": 30,
+    "marketSamples": 14
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Gicumbi",
+    "farmGatePrice": 130.7,
+    "marketPrice": 156.1,
+    "gapPct": 19.4,
+    "reliable": true,
+    "farmGateSamples": 117,
+    "marketSamples": 26
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Kirehe",
+    "farmGatePrice": 110.2,
+    "marketPrice": 129.8,
+    "gapPct": 17.8,
+    "reliable": true,
+    "farmGateSamples": 256,
+    "marketSamples": 43
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Rwamagana",
+    "farmGatePrice": 150.6,
+    "marketPrice": 177.0,
+    "gapPct": 17.5,
+    "reliable": true,
+    "farmGateSamples": 99,
+    "marketSamples": 33
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Musanze",
+    "farmGatePrice": 170.3,
+    "marketPrice": 193.6,
+    "gapPct": 13.7,
+    "reliable": false,
+    "farmGateSamples": 39,
+    "marketSamples": 14
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Rulindo",
+    "farmGatePrice": 142.9,
+    "marketPrice": 162.4,
+    "gapPct": 13.6,
+    "reliable": true,
+    "farmGateSamples": 111,
+    "marketSamples": 59
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Gatsibo",
+    "farmGatePrice": 128.0,
+    "marketPrice": 144.1,
+    "gapPct": 12.6,
+    "reliable": true,
+    "farmGateSamples": 202,
+    "marketSamples": 22
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Gisagara",
+    "farmGatePrice": 102.5,
+    "marketPrice": 114.5,
+    "gapPct": 11.7,
+    "reliable": true,
+    "farmGateSamples": 88,
+    "marketSamples": 44
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Nyagatare",
+    "farmGatePrice": 110.8,
+    "marketPrice": 120.0,
+    "gapPct": 8.3,
+    "reliable": false,
+    "farmGateSamples": 126,
+    "marketSamples": 9
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Rusizi",
+    "farmGatePrice": 160.4,
+    "marketPrice": 173.3,
+    "gapPct": 8.0,
+    "reliable": false,
+    "farmGateSamples": 112,
+    "marketSamples": 3
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Ngororero",
+    "farmGatePrice": 230.0,
+    "marketPrice": 244.0,
+    "gapPct": 6.1,
+    "reliable": true,
+    "farmGateSamples": 215,
+    "marketSamples": 42
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Rubavu",
+    "farmGatePrice": 149.3,
+    "marketPrice": 155.0,
+    "gapPct": 3.8,
+    "reliable": false,
+    "farmGateSamples": 39,
+    "marketSamples": 2
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Gasabo",
+    "farmGatePrice": 189.0,
+    "marketPrice": 181.6,
+    "gapPct": -3.9,
+    "reliable": false,
+    "farmGateSamples": 91,
+    "marketSamples": 12
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Nyaruguru",
+    "farmGatePrice": 146.3,
+    "marketPrice": 137.1,
+    "gapPct": -6.3,
+    "reliable": false,
+    "farmGateSamples": 50,
+    "marketSamples": 7
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Muhanga",
+    "farmGatePrice": 197.9,
+    "marketPrice": 173.2,
+    "gapPct": -12.5,
+    "reliable": true,
+    "farmGateSamples": 194,
+    "marketSamples": 140
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Kicukiro",
+    "farmGatePrice": 118.9,
+    "marketPrice": 100.0,
+    "gapPct": -15.9,
+    "reliable": false,
+    "farmGateSamples": 55,
+    "marketSamples": 1
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Nyarugenege",
+    "farmGatePrice": 119.6,
+    "marketPrice": 100.0,
+    "gapPct": -16.4,
+    "reliable": false,
+    "farmGateSamples": 28,
+    "marketSamples": 1
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Huye",
+    "farmGatePrice": 202.8,
+    "marketPrice": 169.3,
+    "gapPct": -16.5,
+    "reliable": true,
+    "farmGateSamples": 24,
+    "marketSamples": 35
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Bugesera",
+    "farmGatePrice": 266.5,
+    "marketPrice": 199.7,
+    "gapPct": -25.1,
+    "reliable": true,
+    "farmGateSamples": 106,
+    "marketSamples": 34
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Burera",
+    "farmGatePrice": 175.1,
+    "marketPrice": 130.0,
+    "gapPct": -25.8,
+    "reliable": false,
+    "farmGateSamples": 26,
+    "marketSamples": 2
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Ngoma",
+    "farmGatePrice": 146.2,
+    "marketPrice": 101.2,
+    "gapPct": -30.8,
+    "reliable": true,
+    "farmGateSamples": 196,
+    "marketSamples": 16
+  },
+  {
+    "crop": "Cassava",
+    "district": "Kicukiro",
+    "farmGatePrice": 120.0,
+    "marketPrice": 500.0,
+    "gapPct": 316.7,
+    "reliable": false,
+    "farmGateSamples": 1,
+    "marketSamples": 1
+  },
+  {
+    "crop": "Cassava",
+    "district": "Huye",
+    "farmGatePrice": 246.0,
+    "marketPrice": 629.7,
+    "gapPct": 156.0,
+    "reliable": false,
+    "farmGateSamples": 4,
+    "marketSamples": 29
+  },
+  {
+    "crop": "Cassava",
+    "district": "Gasabo",
+    "farmGatePrice": 497.7,
+    "marketPrice": 999.0,
+    "gapPct": 100.7,
+    "reliable": false,
+    "farmGateSamples": 12,
+    "marketSamples": 2
+  },
+  {
+    "crop": "Cassava",
+    "district": "Ruhango",
+    "farmGatePrice": 181.3,
+    "marketPrice": 327.4,
+    "gapPct": 80.6,
+    "reliable": true,
+    "farmGateSamples": 24,
+    "marketSamples": 30
+  },
+  {
+    "crop": "Cassava",
+    "district": "Nyarugenege",
+    "farmGatePrice": 271.0,
+    "marketPrice": 487.5,
+    "gapPct": 79.9,
+    "reliable": false,
+    "farmGateSamples": 5,
+    "marketSamples": 2
+  },
+  {
+    "crop": "Cassava",
+    "district": "Nyanza",
+    "farmGatePrice": 165.0,
+    "marketPrice": 266.2,
+    "gapPct": 61.3,
+    "reliable": true,
+    "farmGateSamples": 25,
+    "marketSamples": 50
+  },
+  {
+    "crop": "Cassava",
+    "district": "Nyamagabe",
+    "farmGatePrice": 412.5,
+    "marketPrice": 619.2,
+    "gapPct": 50.1,
+    "reliable": false,
+    "farmGateSamples": 4,
+    "marketSamples": 25
+  },
+  {
+    "crop": "Cassava",
+    "district": "Kirehe",
+    "farmGatePrice": 208.6,
+    "marketPrice": 303.3,
+    "gapPct": 45.4,
+    "reliable": true,
+    "farmGateSamples": 25,
+    "marketSamples": 18
+  },
+  {
+    "crop": "Cassava",
+    "district": "Nyagatare",
+    "farmGatePrice": 281.1,
+    "marketPrice": 378.6,
+    "gapPct": 34.7,
+    "reliable": false,
+    "farmGateSamples": 9,
+    "marketSamples": 7
+  },
+  {
+    "crop": "Cassava",
+    "district": "Rusizi",
+    "farmGatePrice": 187.5,
+    "marketPrice": 244.3,
+    "gapPct": 30.3,
+    "reliable": false,
+    "farmGateSamples": 4,
+    "marketSamples": 7
+  },
+  {
+    "crop": "Cassava",
+    "district": "Bugesera",
+    "farmGatePrice": 200.1,
+    "marketPrice": 259.7,
+    "gapPct": 29.8,
+    "reliable": true,
+    "farmGateSamples": 37,
+    "marketSamples": 49
+  },
+  {
+    "crop": "Cassava",
+    "district": "Nyaruguru",
+    "farmGatePrice": 285.4,
+    "marketPrice": 367.8,
+    "gapPct": 28.9,
+    "reliable": false,
+    "farmGateSamples": 14,
+    "marketSamples": 24
+  },
+  {
+    "crop": "Cassava",
+    "district": "Gakenke",
+    "farmGatePrice": 375.0,
+    "marketPrice": 430.4,
+    "gapPct": 14.8,
+    "reliable": false,
+    "farmGateSamples": 2,
+    "marketSamples": 13
+  },
+  {
+    "crop": "Cassava",
+    "district": "Muhanga",
+    "farmGatePrice": 325.0,
+    "marketPrice": 351.6,
+    "gapPct": 8.2,
+    "reliable": false,
+    "farmGateSamples": 10,
+    "marketSamples": 19
+  },
+  {
+    "crop": "Cassava",
+    "district": "Kamonyi",
+    "farmGatePrice": 251.7,
+    "marketPrice": 267.6,
+    "gapPct": 6.3,
+    "reliable": true,
+    "farmGateSamples": 32,
+    "marketSamples": 35
+  },
+  {
+    "crop": "Cassava",
+    "district": "Gisagara",
+    "farmGatePrice": 287.5,
+    "marketPrice": 294.6,
+    "gapPct": 2.5,
+    "reliable": false,
+    "farmGateSamples": 4,
+    "marketSamples": 35
+  },
+  {
+    "crop": "Cassava",
+    "district": "Rwamagana",
+    "farmGatePrice": 310.0,
+    "marketPrice": 308.3,
+    "gapPct": -0.5,
+    "reliable": false,
+    "farmGateSamples": 5,
+    "marketSamples": 12
+  },
+  {
+    "crop": "Cassava",
+    "district": "Ngoma",
+    "farmGatePrice": 201.7,
+    "marketPrice": 190.5,
+    "gapPct": -5.6,
+    "reliable": false,
+    "farmGateSamples": 23,
+    "marketSamples": 11
+  },
+  {
+    "crop": "Cassava",
+    "district": "Rulindo",
+    "farmGatePrice": 345.0,
+    "marketPrice": 323.9,
+    "gapPct": -6.1,
+    "reliable": false,
+    "farmGateSamples": 4,
+    "marketSamples": 21
+  },
+  {
+    "crop": "Cassava",
+    "district": "Ngororero",
+    "farmGatePrice": 250.0,
+    "marketPrice": 231.1,
+    "gapPct": -7.6,
+    "reliable": false,
+    "farmGateSamples": 3,
+    "marketSamples": 9
+  },
+  {
+    "crop": "Cassava",
+    "district": "Karongi",
+    "farmGatePrice": 331.2,
+    "marketPrice": 294.8,
+    "gapPct": -11.0,
+    "reliable": false,
+    "farmGateSamples": 4,
+    "marketSamples": 32
+  },
+  {
+    "crop": "Cassava",
+    "district": "Nyamasheke",
+    "farmGatePrice": 208.9,
+    "marketPrice": 185.4,
+    "gapPct": -11.2,
+    "reliable": true,
+    "farmGateSamples": 21,
+    "marketSamples": 37
+  },
+  {
+    "crop": "Cassava",
+    "district": "Kayonza",
+    "farmGatePrice": 290.9,
+    "marketPrice": 250.0,
+    "gapPct": -14.1,
+    "reliable": false,
+    "farmGateSamples": 11,
+    "marketSamples": 4
+  },
+  {
+    "crop": "Cassava",
+    "district": "Gatsibo",
+    "farmGatePrice": 421.7,
+    "marketPrice": 356.2,
+    "gapPct": -15.5,
+    "reliable": false,
+    "farmGateSamples": 3,
+    "marketSamples": 6
+  },
+  {
+    "crop": "Cassava",
+    "district": "Gicumbi",
+    "farmGatePrice": 340.0,
+    "marketPrice": 236.0,
+    "gapPct": -30.6,
+    "reliable": false,
+    "farmGateSamples": 5,
+    "marketSamples": 20
+  },
+  {
+    "crop": "Cassava",
+    "district": "Rutsiro",
+    "farmGatePrice": 572.0,
+    "marketPrice": 264.5,
+    "gapPct": -53.8,
+    "reliable": false,
+    "farmGateSamples": 5,
+    "marketSamples": 10
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Nyamagabe",
+    "farmGatePrice": 250.0,
+    "marketPrice": 346.4,
+    "gapPct": 38.6,
+    "reliable": false,
+    "farmGateSamples": 8,
+    "marketSamples": 11
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Kamonyi",
+    "farmGatePrice": 283.6,
+    "marketPrice": 378.3,
+    "gapPct": 33.4,
+    "reliable": false,
+    "farmGateSamples": 7,
+    "marketSamples": 10
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Ngoma",
+    "farmGatePrice": 248.7,
+    "marketPrice": 326.1,
+    "gapPct": 31.1,
+    "reliable": true,
+    "farmGateSamples": 107,
+    "marketSamples": 47
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Burera",
+    "farmGatePrice": 281.5,
+    "marketPrice": 340.0,
+    "gapPct": 20.8,
+    "reliable": false,
+    "farmGateSamples": 17,
+    "marketSamples": 3
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Nyaruguru",
+    "farmGatePrice": 277.6,
+    "marketPrice": 330.0,
+    "gapPct": 18.9,
+    "reliable": false,
+    "farmGateSamples": 23,
+    "marketSamples": 4
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Rutsiro",
+    "farmGatePrice": 203.9,
+    "marketPrice": 240.6,
+    "gapPct": 18.0,
+    "reliable": false,
+    "farmGateSamples": 21,
+    "marketSamples": 8
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Nyamasheke",
+    "farmGatePrice": 364.2,
+    "marketPrice": 416.3,
+    "gapPct": 14.3,
+    "reliable": true,
+    "farmGateSamples": 46,
+    "marketSamples": 35
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Nyabihu",
+    "farmGatePrice": 340.0,
+    "marketPrice": 383.3,
+    "gapPct": 12.7,
+    "reliable": false,
+    "farmGateSamples": 4,
+    "marketSamples": 3
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Rwamagana",
+    "farmGatePrice": 269.3,
+    "marketPrice": 299.6,
+    "gapPct": 11.3,
+    "reliable": true,
+    "farmGateSamples": 100,
+    "marketSamples": 74
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Nyagatare",
+    "farmGatePrice": 277.3,
+    "marketPrice": 305.9,
+    "gapPct": 10.3,
+    "reliable": true,
+    "farmGateSamples": 83,
+    "marketSamples": 16
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Gisagara",
+    "farmGatePrice": 199.7,
+    "marketPrice": 220.0,
+    "gapPct": 10.2,
+    "reliable": true,
+    "farmGateSamples": 18,
+    "marketSamples": 16
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Ngororero",
+    "farmGatePrice": 278.6,
+    "marketPrice": 305.0,
+    "gapPct": 9.5,
+    "reliable": false,
+    "farmGateSamples": 16,
+    "marketSamples": 6
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Kayonza",
+    "farmGatePrice": 248.9,
+    "marketPrice": 269.7,
+    "gapPct": 8.4,
+    "reliable": true,
+    "farmGateSamples": 92,
+    "marketSamples": 39
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Rusizi",
+    "farmGatePrice": 249.9,
+    "marketPrice": 268.9,
+    "gapPct": 7.6,
+    "reliable": true,
+    "farmGateSamples": 24,
+    "marketSamples": 19
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Bugesera",
+    "farmGatePrice": 283.9,
+    "marketPrice": 302.6,
+    "gapPct": 6.6,
+    "reliable": true,
+    "farmGateSamples": 36,
+    "marketSamples": 54
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Gakenke",
+    "farmGatePrice": 347.0,
+    "marketPrice": 369.7,
+    "gapPct": 6.5,
+    "reliable": true,
+    "farmGateSamples": 33,
+    "marketSamples": 15
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Huye",
+    "farmGatePrice": 278.1,
+    "marketPrice": 293.2,
+    "gapPct": 5.4,
+    "reliable": true,
+    "farmGateSamples": 16,
+    "marketSamples": 17
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Musanze",
+    "farmGatePrice": 306.5,
+    "marketPrice": 314.7,
+    "gapPct": 2.7,
+    "reliable": false,
+    "farmGateSamples": 11,
+    "marketSamples": 7
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Gicumbi",
+    "farmGatePrice": 303.3,
+    "marketPrice": 310.9,
+    "gapPct": 2.5,
+    "reliable": true,
+    "farmGateSamples": 46,
+    "marketSamples": 22
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Kicukiro",
+    "farmGatePrice": 308.3,
+    "marketPrice": 300.0,
+    "gapPct": -2.7,
+    "reliable": false,
+    "farmGateSamples": 30,
+    "marketSamples": 1
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Nyanza",
+    "farmGatePrice": 266.1,
+    "marketPrice": 256.9,
+    "gapPct": -3.5,
+    "reliable": false,
+    "farmGateSamples": 9,
+    "marketSamples": 13
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Rulindo",
+    "farmGatePrice": 378.5,
+    "marketPrice": 365.3,
+    "gapPct": -3.5,
+    "reliable": false,
+    "farmGateSamples": 10,
+    "marketSamples": 15
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Gasabo",
+    "farmGatePrice": 373.9,
+    "marketPrice": 345.4,
+    "gapPct": -7.6,
+    "reliable": true,
+    "farmGateSamples": 46,
+    "marketSamples": 22
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Karongi",
+    "farmGatePrice": 330.0,
+    "marketPrice": 296.2,
+    "gapPct": -10.2,
+    "reliable": false,
+    "farmGateSamples": 13,
+    "marketSamples": 18
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Gatsibo",
+    "farmGatePrice": 287.0,
+    "marketPrice": 256.6,
+    "gapPct": -10.6,
+    "reliable": true,
+    "farmGateSamples": 166,
+    "marketSamples": 66
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Muhanga",
+    "farmGatePrice": 394.4,
+    "marketPrice": 333.0,
+    "gapPct": -15.6,
+    "reliable": true,
+    "farmGateSamples": 31,
+    "marketSamples": 24
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Kirehe",
+    "farmGatePrice": 253.6,
+    "marketPrice": 210.2,
+    "gapPct": -17.1,
+    "reliable": true,
+    "farmGateSamples": 132,
+    "marketSamples": 33
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Rubavu",
+    "farmGatePrice": 299.1,
+    "marketPrice": 234.0,
+    "gapPct": -21.8,
+    "reliable": false,
+    "farmGateSamples": 27,
+    "marketSamples": 1
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Nyarugenege",
+    "farmGatePrice": 652.3,
+    "marketPrice": 350.0,
+    "gapPct": -46.3,
+    "reliable": false,
+    "farmGateSamples": 11,
+    "marketSamples": 1
+  },
+  {
+    "crop": "Cooking banana",
+    "district": "Nyarugenge",
+    "farmGatePrice": 624.0,
+    "marketPrice": 300.0,
+    "gapPct": -51.9,
+    "reliable": false,
+    "farmGateSamples": 5,
+    "marketSamples": 1
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Musanze",
+    "farmGatePrice": 172.4,
+    "marketPrice": 1113.8,
+    "gapPct": 546.1,
+    "reliable": true,
+    "farmGateSamples": 45,
+    "marketSamples": 22
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Nyanza",
+    "farmGatePrice": 132.6,
+    "marketPrice": 364.7,
+    "gapPct": 175.0,
+    "reliable": true,
+    "farmGateSamples": 49,
+    "marketSamples": 27
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Gakenke",
+    "farmGatePrice": 255.3,
+    "marketPrice": 458.9,
+    "gapPct": 79.7,
+    "reliable": true,
+    "farmGateSamples": 93,
+    "marketSamples": 56
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Nyamagabe",
+    "farmGatePrice": 171.6,
+    "marketPrice": 280.4,
+    "gapPct": 63.4,
+    "reliable": false,
+    "farmGateSamples": 21,
+    "marketSamples": 14
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Nyamasheke",
+    "farmGatePrice": 241.8,
+    "marketPrice": 361.8,
+    "gapPct": 49.6,
+    "reliable": true,
+    "farmGateSamples": 73,
+    "marketSamples": 17
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Nyagatare",
+    "farmGatePrice": 153.8,
+    "marketPrice": 216.2,
+    "gapPct": 40.6,
+    "reliable": true,
+    "farmGateSamples": 120,
+    "marketSamples": 19
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Nyaruguru",
+    "farmGatePrice": 165.0,
+    "marketPrice": 229.6,
+    "gapPct": 39.2,
+    "reliable": false,
+    "farmGateSamples": 46,
+    "marketSamples": 13
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Gicumbi",
+    "farmGatePrice": 167.1,
+    "marketPrice": 230.5,
+    "gapPct": 37.9,
+    "reliable": true,
+    "farmGateSamples": 118,
+    "marketSamples": 26
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Rulindo",
+    "farmGatePrice": 185.2,
+    "marketPrice": 250.9,
+    "gapPct": 35.5,
+    "reliable": true,
+    "farmGateSamples": 89,
+    "marketSamples": 46
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Ruhango",
+    "farmGatePrice": 167.7,
+    "marketPrice": 220.1,
+    "gapPct": 31.2,
+    "reliable": true,
+    "farmGateSamples": 44,
+    "marketSamples": 30
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Nyabihu",
+    "farmGatePrice": 220.7,
+    "marketPrice": 289.0,
+    "gapPct": 30.9,
+    "reliable": false,
+    "farmGateSamples": 18,
+    "marketSamples": 9
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Rusizi",
+    "farmGatePrice": 207.9,
+    "marketPrice": 257.2,
+    "gapPct": 23.7,
+    "reliable": true,
+    "farmGateSamples": 39,
+    "marketSamples": 18
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Gisagara",
+    "farmGatePrice": 129.8,
+    "marketPrice": 156.5,
+    "gapPct": 20.6,
+    "reliable": true,
+    "farmGateSamples": 43,
+    "marketSamples": 42
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Kamonyi",
+    "farmGatePrice": 144.0,
+    "marketPrice": 172.5,
+    "gapPct": 19.8,
+    "reliable": true,
+    "farmGateSamples": 54,
+    "marketSamples": 24
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Kayonza",
+    "farmGatePrice": 230.4,
+    "marketPrice": 268.4,
+    "gapPct": 16.5,
+    "reliable": true,
+    "farmGateSamples": 76,
+    "marketSamples": 30
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Rwamagana",
+    "farmGatePrice": 243.1,
+    "marketPrice": 265.6,
+    "gapPct": 9.3,
+    "reliable": true,
+    "farmGateSamples": 134,
+    "marketSamples": 68
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Karongi",
+    "farmGatePrice": 247.2,
+    "marketPrice": 268.2,
+    "gapPct": 8.5,
+    "reliable": true,
+    "farmGateSamples": 37,
+    "marketSamples": 34
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Muhanga",
+    "farmGatePrice": 231.2,
+    "marketPrice": 247.2,
+    "gapPct": 6.9,
+    "reliable": true,
+    "farmGateSamples": 81,
+    "marketSamples": 67
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Rutsiro",
+    "farmGatePrice": 150.7,
+    "marketPrice": 157.7,
+    "gapPct": 4.6,
+    "reliable": true,
+    "farmGateSamples": 56,
+    "marketSamples": 31
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Ngororero",
+    "farmGatePrice": 237.7,
+    "marketPrice": 246.2,
+    "gapPct": 3.6,
+    "reliable": true,
+    "farmGateSamples": 77,
+    "marketSamples": 26
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Kicukiro",
+    "farmGatePrice": 207.1,
+    "marketPrice": 207.0,
+    "gapPct": -0.0,
+    "reliable": false,
+    "farmGateSamples": 55,
+    "marketSamples": 1
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Gasabo",
+    "farmGatePrice": 233.0,
+    "marketPrice": 220.3,
+    "gapPct": -5.5,
+    "reliable": true,
+    "farmGateSamples": 127,
+    "marketSamples": 29
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Ngoma",
+    "farmGatePrice": 277.4,
+    "marketPrice": 256.7,
+    "gapPct": -7.5,
+    "reliable": true,
+    "farmGateSamples": 111,
+    "marketSamples": 27
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Gatsibo",
+    "farmGatePrice": 204.1,
+    "marketPrice": 185.1,
+    "gapPct": -9.3,
+    "reliable": true,
+    "farmGateSamples": 193,
+    "marketSamples": 43
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Kirehe",
+    "farmGatePrice": 206.4,
+    "marketPrice": 184.0,
+    "gapPct": -10.9,
+    "reliable": true,
+    "farmGateSamples": 133,
+    "marketSamples": 38
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Nyarugenge",
+    "farmGatePrice": 218.6,
+    "marketPrice": 180.0,
+    "gapPct": -17.7,
+    "reliable": false,
+    "farmGateSamples": 28,
+    "marketSamples": 2
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Rubavu",
+    "farmGatePrice": 331.5,
+    "marketPrice": 250.0,
+    "gapPct": -24.6,
+    "reliable": false,
+    "farmGateSamples": 24,
+    "marketSamples": 1
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Bugesera",
+    "farmGatePrice": 270.8,
+    "marketPrice": 200.2,
+    "gapPct": -26.1,
+    "reliable": true,
+    "farmGateSamples": 67,
+    "marketSamples": 51
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Nyarugenege",
+    "farmGatePrice": 194.6,
+    "marketPrice": 140.0,
+    "gapPct": -28.1,
+    "reliable": false,
+    "farmGateSamples": 26,
+    "marketSamples": 1
+  },
+  {
+    "crop": "Dessert banana",
+    "district": "Huye",
+    "farmGatePrice": 513.3,
+    "marketPrice": 294.3,
+    "gapPct": -42.7,
+    "reliable": true,
+    "farmGateSamples": 42,
+    "marketSamples": 53
+  }
+]
