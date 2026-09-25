@@ -51,7 +51,7 @@ function DetailPage() {
   return (
     <div className="min-h-screen bg-background">
       <AppHeader />
-      <section className="border-b border-border">
+      <section className="hero-band border-b border-border">
         <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 sm:py-12">
           <Link to="/overview" className="mb-7 inline-flex min-h-11 items-center gap-2 rounded-md font-bold text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
             <ArrowLeft className="size-5" aria-hidden="true" />

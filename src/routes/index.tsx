@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Sprout } from "lucide-react";
 import { Button } from "../components/ui/button";
+import { ThemeToggle } from "../components/theme-toggle";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -18,17 +19,20 @@ export const Route = createFileRoute("/")({
 
 function IntroPage() {
   return (
-    <main className="relative grid min-h-screen overflow-hidden bg-background px-5 py-8 sm:px-8">
+    <main className="landing-band relative grid min-h-screen overflow-hidden bg-background px-5 py-8 sm:px-8">
       <div className="absolute inset-x-0 top-0 h-1 bg-primary" />
       <div className="mx-auto flex w-full max-w-6xl flex-col">
-        <header className="flex items-center gap-3 py-3">
-          <span className="grid size-11 place-items-center rounded-lg border border-primary/40 bg-primary-soft text-primary">
-            <Sprout className="size-6" aria-hidden="true" />
-          </span>
-          <div>
-            <p className="font-display text-lg font-extrabold text-foreground">AgriLink</p>
-            <p className="text-xs font-bold uppercase tracking-[0.14em] text-muted-foreground">Price Insight</p>
+        <header className="flex items-center justify-between gap-3 py-3">
+          <div className="flex items-center gap-3">
+            <span className="grid size-11 place-items-center rounded-lg border border-primary/40 bg-primary-soft text-primary">
+              <Sprout className="size-6" aria-hidden="true" />
+            </span>
+            <div>
+              <p className="font-display text-lg font-extrabold text-foreground">AgriLink</p>
+              <p className="text-xs font-bold uppercase tracking-[0.14em] text-muted-foreground">Price Insight</p>
+            </div>
           </div>
+          <ThemeToggle />
         </header>
 
         <section className="flex flex-1 items-center py-16">
