@@ -17,7 +17,8 @@ export const Route = createFileRoute("/")({
   component: OverviewPage,
 });
 
-const topInsights = rankedInsights.slice(0, 10);
+// Only records with enough samples on both sides are ranked.
+const topInsights = rankedInsights.filter((r) => r.reliable).slice(0, 10);
 
 function OverviewPage() {
   return (
@@ -31,7 +32,7 @@ function OverviewPage() {
               <div>
                 <p className="mb-2 text-sm font-bold uppercase text-primary-foreground/75">National overview</p>
                 <h1 className="font-display text-3xl font-bold leading-tight sm:text-5xl">Where is the price gap widest?</h1>
-                <p className="mt-4 max-w-2xl text-lg leading-relaxed text-primary-foreground/85">The 10 largest differences between farm-gate and market prices across four key crops.</p>
+                <p className="mt-4 max-w-2xl text-lg leading-relaxed text-primary-foreground/85">The 10 largest differences between farm-gate and market prices across four key crops. Limited-sample records are excluded from this ranking.</p>
               </div>
             </div>
           </div>
