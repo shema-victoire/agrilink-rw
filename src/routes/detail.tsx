@@ -15,11 +15,11 @@ const defaultDistrict = districtsForCrop(defaultCrop)[0] ?? "";
 
 export const Route = createFileRoute("/detail")({
   validateSearch: (search: Record<string, unknown>) => {
-    const crop = isCrop(search.crop) ? search.crop : defaultCrop;
+    const crop = isCrop(search["crop"]) ? search["crop"] : defaultCrop;
     const districts = districtsForCrop(crop);
     const district =
-      typeof search.district === "string" && districts.includes(search.district)
-        ? search.district
+      typeof search["district"] === "string" && districts.includes(search["district"])
+        ? search["district"]
         : (districts[0] ?? defaultDistrict);
     return { crop, district };
   },
