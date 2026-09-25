@@ -2,6 +2,6 @@
 
 - [x] Refine the AgriLink product brief
 - [x] Validate the 116-record JSON dataset
-- [ ] Build the National Overview screen
-- [ ] Build the Crop + District Detail screen
+- [x] Build the National Overview screen
+- [x] Build the Crop + District Detail screen
 - [ ] Verify the mobile and desktop flows

@@ -8,3 +8,8 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+## Project architecture
+
+- Keep the bundled NISR JSON as the sole source of displayed price insights because the hackathon prototype must be deterministic and work without network access.
+- Use URL search parameters for crop and district selection because ranked findings should deep-link directly into a reproducible detail view.
