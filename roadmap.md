@@ -4,4 +4,4 @@
 - [x] Validate the 116-record JSON dataset
 - [x] Build the National Overview screen
 - [x] Build the Crop + District Detail screen
-- [ ] Verify the mobile and desktop flows
+- [x] Verify the mobile and desktop flows
