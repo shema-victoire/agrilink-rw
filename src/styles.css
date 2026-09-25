@@ -54,6 +54,11 @@
   --color-gap-soft: var(--gap-soft);
   --color-farm: var(--farm);
   --color-market: var(--market);
+  --color-header-foreground: var(--header-foreground);
+  --color-header-muted: var(--header-muted);
+  --color-header-border: var(--header-border);
+  --color-header-control: var(--header-control);
+  --color-header-control-hover: var(--header-control-hover);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -97,6 +102,11 @@
   --gap-soft: oklch(0.21 0.035 80);
   --farm: oklch(0.63 0.09 95);
   --market: oklch(0.67 0.15 145);
+  --header-foreground: oklch(0.965 0.006 120);
+  --header-muted: oklch(0.78 0.035 145);
+  --header-border: oklch(0.36 0.04 145);
+  --header-control: oklch(0.21 0.045 145);
+  --header-control-hover: oklch(0.27 0.06 145);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -110,6 +120,58 @@
   --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
+}
+
+.light {
+  color-scheme: light;
+  --background: oklch(0.982 0.006 120);
+  --foreground: oklch(0.2 0.025 145);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.2 0.025 145);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.2 0.025 145);
+  --primary: oklch(0.41 0.105 145);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.72 0.14 78);
+  --secondary-foreground: oklch(0.22 0.035 78);
+  --muted: oklch(0.95 0.012 135);
+  --muted-foreground: oklch(0.48 0.025 145);
+  --accent: oklch(0.94 0.025 145);
+  --accent-foreground: oklch(0.24 0.04 145);
+  --border: oklch(0.88 0.018 140);
+  --input: oklch(0.82 0.025 140);
+  --ring: oklch(0.47 0.115 145);
+  --surface: oklch(0.965 0.012 135);
+  --primary-soft: oklch(0.91 0.055 145);
+  --gap: oklch(0.56 0.145 70);
+  --gap-soft: oklch(0.95 0.05 82);
+  --farm: oklch(0.62 0.11 95);
+  --market: oklch(0.49 0.12 145);
+  --header-foreground: oklch(0.99 0 0);
+  --header-muted: oklch(0.9 0.045 145);
+  --header-border: oklch(1 0 0 / 24%);
+  --header-control: oklch(1 0 0 / 13%);
+  --header-control-hover: oklch(1 0 0 / 22%);
+}
+
+.light .app-header,
+.light .hero-band,
+.light .landing-band {
+  background-image: linear-gradient(135deg, oklch(0.63 0.095 145), oklch(0.35 0.105 148));
+}
+
+.light .app-header,
+.light .hero-band,
+.light .landing-band {
+  --foreground: var(--header-foreground);
+  --muted-foreground: var(--header-muted);
+  --primary: oklch(0.92 0.07 145);
+  --primary-soft: oklch(1 0 0 / 13%);
+  --border: var(--header-border);
+}
+
+.light .bg-card {
+  box-shadow: 0 10px 28px -22px oklch(0.22 0.04 145 / 45%);
 }
 
 .dark {

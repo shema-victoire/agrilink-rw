@@ -24,7 +24,7 @@ function OverviewPage() {
     <div className="min-h-screen bg-background">
       <AppHeader />
       <main className="mx-auto max-w-6xl px-4 pb-12 pt-10 sm:px-6 sm:pb-16 sm:pt-14">
-        <section className="grid gap-8 border-b border-border pb-10 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-end">
+        <section className="hero-band grid gap-8 border-b border-border pb-10 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-end">
           <div className="max-w-3xl">
             <div className="mb-5 flex items-center gap-2 text-primary">
               <BarChart3 className="size-5" aria-hidden="true" />
@@ -66,7 +66,7 @@ function OverviewPage() {
                     <span className="block text-base font-bold text-card-foreground sm:text-lg">{record.crop}</span>
                     <span className="mt-1 block text-sm font-medium text-muted-foreground">{record.district}</span>
                   </span>
-                  <span className="shrink-0 text-right">
+                  <span className="shrink-0 rounded-full border border-gap/25 bg-gap-soft px-3 py-2 text-right">
                     <span className="block font-display text-2xl font-extrabold text-gap sm:text-3xl">{record.gapPct.toFixed(1)}%</span>
                     <span className="text-[0.65rem] font-bold uppercase tracking-[0.12em] text-muted-foreground">Price gap</span>
                   </span>
