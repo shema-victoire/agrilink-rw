@@ -66,7 +66,7 @@ function OverviewPage() {
                     <span className="block text-base font-bold text-card-foreground sm:text-lg">{record.crop}</span>
                     <span className="mt-1 block text-sm font-medium text-muted-foreground">{record.district}</span>
                   </span>
-                  <span className="shrink-0 rounded-full border border-gap/25 bg-gap-soft px-3 py-2 text-right">
+                  <span className="gap-badge shrink-0 text-right">
                     <span className="block font-display text-2xl font-extrabold text-gap sm:text-3xl">{record.gapPct.toFixed(1)}%</span>
                     <span className="text-[0.65rem] font-bold uppercase tracking-[0.12em] text-muted-foreground">Price gap</span>
                   </span>

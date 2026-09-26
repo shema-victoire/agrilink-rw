@@ -35,7 +35,7 @@ function IntroPage() {
           <ThemeToggle />
         </header>
 
-        <section className="flex flex-1 items-center py-16">
+        <section className="landing-hero hero-band flex flex-1 items-center py-16">
           <div className="max-w-3xl">
             <p className="mb-5 text-xs font-bold uppercase tracking-[0.16em] text-primary">Public agricultural intelligence</p>
             <h1 className="font-display text-5xl font-extrabold leading-[1.02] text-foreground sm:text-7xl lg:text-8xl">
