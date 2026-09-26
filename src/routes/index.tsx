@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, MapPin, Sprout, Wheat } from "lucide-react";
+import { ArrowRight, Sprout } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { ThemeToggle } from "../components/theme-toggle";
 import { CROPS, priceInsights } from "../data/price-insights";
@@ -21,10 +21,10 @@ export const Route = createFileRoute("/")({
 const districtCount = new Set(priceInsights.map((record) => record.district)).size;
 
 const stats = [
-  { icon: Wheat, label: "Records analyzed", value: `${priceInsights.length} crop-district records` },
-  { icon: Sprout, label: "Coverage", value: `${CROPS.length} key crops` },
-  { icon: MapPin, label: "Geography", value: `${districtCount} districts` },
-  { icon: null, label: "Powered by", value: "NISR SAS 2025" },
+  { label: "Records analyzed", value: `${priceInsights.length} crop-district records` },
+  { label: "Coverage", value: `${CROPS.length} key crops` },
+  { label: "Geography", value: `${districtCount} districts` },
+  { label: "Powered by", value: "NISR SAS 2025" },
 ] as const;
 
 function IntroPage() {
