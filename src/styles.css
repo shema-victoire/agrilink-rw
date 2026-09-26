@@ -205,6 +205,17 @@
   margin-top: auto;
 }
 
+.light .landing-band header button {
+  border-color: var(--input);
+  background: var(--card);
+  color: var(--foreground);
+}
+
+.light .landing-band header button:hover {
+  background: var(--accent);
+  color: var(--foreground);
+}
+
 .light .gap-badge {
   border: 1px solid oklch(0.56 0.145 70 / 28%);
   border-radius: 9999px;
