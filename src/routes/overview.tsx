@@ -24,7 +24,7 @@ function OverviewPage() {
     <div className="min-h-screen bg-background">
       <AppHeader />
       <main className="mx-auto max-w-6xl px-4 pb-12 pt-10 sm:px-6 sm:pb-16 sm:pt-14">
-        <section className="hero-band grid gap-8 border-b border-border pb-10 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-end">
+        <section className="hero-band grid gap-8 overflow-hidden rounded-lg p-5 sm:p-7 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-end">
           <div className="max-w-3xl">
             <div className="mb-5 flex items-center gap-2 text-primary">
               <BarChart3 className="size-5" aria-hidden="true" />
