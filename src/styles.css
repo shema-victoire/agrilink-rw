@@ -196,15 +196,6 @@
   --border: var(--header-border);
 }
 
-.light .landing-band .landing-hero {
-  flex: 0 0 auto;
-  min-height: min(70vh, 680px);
-}
-
-.light .landing-band footer {
-  margin-top: auto;
-}
-
 .light .landing-band header button {
   border-color: var(--input);
   background: var(--card);

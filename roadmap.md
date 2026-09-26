@@ -8,3 +8,6 @@
 - [x] Restyle the Overview and Detail screens with the dark AgriLink design system
 - [x] Add a public intro screen leading to the Overview
 - [x] Verify the new intro-to-analysis flow on mobile and desktop
+- [x] Add a persistent light/dark toggle while keeping dark as the default
+- [x] Add the light palette across the intro, Overview, and Detail screens
+- [x] Verify theme switching preserves the Detail selection on mobile and desktop
