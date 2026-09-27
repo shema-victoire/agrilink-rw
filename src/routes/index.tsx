@@ -31,7 +31,7 @@ function IntroPage() {
   return (
     <main className="landing-band relative min-h-screen overflow-hidden bg-background px-5 py-8 sm:px-8">
       <div className="absolute inset-x-0 top-0 h-1 bg-primary" />
-      <div className="mx-auto flex w-full max-w-6xl flex-col">
+      <div className="mx-auto flex min-h-screen w-full max-w-6xl flex-col">
         <header className="flex items-center justify-between gap-3 py-3">
           <div className="flex items-center gap-3">
             <span className="grid size-11 place-items-center rounded-lg border border-primary/40 bg-primary-soft text-primary">
