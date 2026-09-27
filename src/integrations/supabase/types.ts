@@ -14,7 +14,48 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      market_listings: {
+        Row: {
+          crop: string
+          district: string
+          id: string
+          phone: string
+          posted_at: string
+          price_expected: number
+          quantity_kg: number
+          seller_type: string
+          service_tags: string[]
+          status: string
+          value_notes: string | null
+        }
+        Insert: {
+          crop: string
+          district: string
+          id?: string
+          phone: string
+          posted_at?: string
+          price_expected: number
+          quantity_kg: number
+          seller_type: string
+          service_tags?: string[]
+          status?: string
+          value_notes?: string | null
+        }
+        Update: {
+          crop?: string
+          district?: string
+          id?: string
+          phone?: string
+          posted_at?: string
+          price_expected?: number
+          quantity_kg?: number
+          seller_type?: string
+          service_tags?: string[]
+          status?: string
+          value_notes?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
