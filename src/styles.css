@@ -107,6 +107,8 @@
   --header-border: oklch(0.36 0.04 145);
   --header-control: oklch(0.21 0.045 145);
   --header-control-hover: oklch(0.27 0.06 145);
+  --landing-cta: var(--primary);
+  --landing-cta-foreground: var(--primary-foreground);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -152,6 +154,8 @@
   --header-border: oklch(1 0 0 / 24%);
   --header-control: oklch(1 0 0 / 13%);
   --header-control-hover: oklch(1 0 0 / 22%);
+  --landing-cta: oklch(0.3 0.09 145);
+  --landing-cta-foreground: oklch(0.99 0 0);
 }
 
 .light .app-header {
@@ -196,12 +200,15 @@
   --border: var(--header-border);
 }
 
-/* The CTA sits on the gradient band: keep it a solid white card with dark
-   green text instead of inheriting the light-green --primary used for the
-   eyebrow label above it. */
+/* Keep the CTA high-contrast instead of inheriting the pale hero accent. */
 .light .landing-band .landing-hero .landing-cta {
-  --primary: var(--card);
-  --primary-foreground: var(--card-foreground);
+  background-color: var(--landing-cta);
+  color: var(--landing-cta-foreground);
+}
+
+.light .landing-band .landing-hero .landing-cta:hover {
+  background-color: oklch(0.25 0.075 145);
+  color: var(--landing-cta-foreground);
 }
 
 .light .landing-band header button {
