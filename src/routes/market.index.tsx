@@ -6,7 +6,7 @@ import { labelClass, PrototypeNotice, selectClass, SellerBadge } from "../compon
 import { CROPS, formatPrice } from "../data/price-insights";
 import { ALL_DISTRICTS, fetchListings, sellerBadge, whatsappLink, type Listing } from "../lib/market";
 
-export const Route = createFileRoute("/market")({
+export const Route = createFileRoute("/market/")({
   head: () => ({
     meta: [
       { title: "Market Feed — AgriLink" },

@@ -11,7 +11,9 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as DetailRouteImport } from './routes/detail'
+import { Route as MarketRouteImport } from './routes/market'
 import { Route as OverviewRouteImport } from './routes/overview'
+import { Route as MarketPostRouteImport } from './routes/market.post'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -23,39 +25,56 @@ const DetailRoute = DetailRouteImport.update({
   path: '/detail',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MarketRoute = MarketRouteImport.update({
+  id: '/market',
+  path: '/market',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const OverviewRoute = OverviewRouteImport.update({
   id: '/overview',
   path: '/overview',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MarketPostRoute = MarketPostRouteImport.update({
+  id: '/post',
+  path: '/post',
+  getParentRoute: () => MarketRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/detail': typeof DetailRoute
+  '/market': typeof MarketRouteWithChildren
   '/overview': typeof OverviewRoute
+  '/market/post': typeof MarketPostRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/detail': typeof DetailRoute
+  '/market': typeof MarketRouteWithChildren
   '/overview': typeof OverviewRoute
+  '/market/post': typeof MarketPostRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/detail': typeof DetailRoute
+  '/market': typeof MarketRouteWithChildren
   '/overview': typeof OverviewRoute
+  '/market/post': typeof MarketPostRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/detail' | '/overview'
+  fullPaths: '/' | '/detail' | '/market' | '/overview' | '/market/post'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/detail' | '/overview'
-  id: '__root__' | '/' | '/detail' | '/overview'
+  to: '/' | '/detail' | '/market' | '/overview' | '/market/post'
+  id: '__root__' | '/' | '/detail' | '/market' | '/overview' | '/market/post'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   DetailRoute: typeof DetailRoute
+  MarketRoute: typeof MarketRouteWithChildren
   OverviewRoute: typeof OverviewRoute
 }
 
@@ -75,6 +94,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DetailRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/market': {
+      id: '/market'
+      path: '/market'
+      fullPath: '/market'
+      preLoaderRoute: typeof MarketRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/overview': {
       id: '/overview'
       path: '/overview'
@@ -82,12 +108,31 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof OverviewRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/market/post': {
+      id: '/market/post'
+      path: '/post'
+      fullPath: '/market/post'
+      preLoaderRoute: typeof MarketPostRouteImport
+      parentRoute: typeof MarketRoute
+    }
   }
 }
+
+interface MarketRouteChildren {
+  MarketPostRoute: typeof MarketPostRoute
+}
+
+const MarketRouteChildren: MarketRouteChildren = {
+  MarketPostRoute: MarketPostRoute,
+}
+
+const MarketRouteWithChildren =
+  MarketRoute._addFileChildren(MarketRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   DetailRoute: DetailRoute,
+  MarketRoute: MarketRouteWithChildren,
   OverviewRoute: OverviewRoute,
 }
 export const routeTree = rootRouteImport

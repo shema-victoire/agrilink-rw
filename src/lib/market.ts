@@ -49,7 +49,3 @@ export function whatsappLink(l: Listing) {
   const text = `Hi, I saw your ${l.crop} listing on AgriLink (${l.quantity_kg}kg, RwF ${l.price_expected}/kg in ${l.district}). I'm interested.`;
   return `https://wa.me/${digits}?text=${encodeURIComponent(text)}`;
 }
-
-export function PrototypeNotice() {
-  return null;
-}
