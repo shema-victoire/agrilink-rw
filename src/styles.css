@@ -201,6 +201,7 @@
 }
 
 /* Keep the CTA high-contrast instead of inheriting the pale hero accent. */
+.light .hero-band .landing-cta,
 .light .landing-band .landing-hero .landing-cta {
   background-color: var(--landing-cta);
   color: var(--landing-cta-foreground);

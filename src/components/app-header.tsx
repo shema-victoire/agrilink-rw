@@ -16,9 +16,14 @@ export function AppHeader() {
           </span>
         </Link>
         <div className="flex shrink-0 items-center gap-2">
-          <span className="hidden rounded-full border border-header-border bg-header-control px-3 py-2 text-xs font-bold text-header-muted sm:inline-flex">
-            NISR data
-          </span>
+          <nav aria-label="Main" className="flex items-center gap-1 rounded-full border border-header-border bg-header-control p-1">
+            <Link to="/overview" className="rounded-full px-3 py-1.5 text-xs font-bold text-muted-foreground hover:text-foreground" activeProps={{ className: "bg-primary-soft text-foreground" }}>
+              Insights
+            </Link>
+            <Link to="/market" className="rounded-full px-3 py-1.5 text-xs font-bold text-muted-foreground hover:text-foreground" activeProps={{ className: "bg-primary-soft text-foreground" }}>
+              Market
+            </Link>
+          </nav>
           <ThemeToggle />
         </div>
       </div>

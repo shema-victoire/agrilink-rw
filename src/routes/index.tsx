@@ -54,12 +54,17 @@ function IntroPage() {
             <p className="mt-7 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
               Built on real NISR Seasonal Agricultural Survey data, this tool shows the gap between what farmers earn at the farm-gate and what their crops fetch at market.
             </p>
-            <Button asChild size="lg" className="landing-cta mt-9 h-13 rounded-lg px-6 text-base font-bold">
-              <Link to="/overview">
-                View Price Insight
-                <ArrowRight className="size-5" aria-hidden="true" />
+            <div className="mt-9 flex flex-wrap gap-3">
+              <Button asChild size="lg" className="landing-cta h-13 rounded-lg px-6 text-base font-bold">
+                <Link to="/overview">
+                  View Price Insight
+                  <ArrowRight className="size-5" aria-hidden="true" />
+                </Link>
+              </Button>
+              <Link to="/market" className="inline-flex h-13 items-center rounded-lg border border-border px-6 text-base font-bold text-foreground hover:bg-primary-soft">
+                Open Market Feed
               </Link>
-            </Button>
+            </div>
           </div>
         </section>
 
