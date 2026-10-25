@@ -55,7 +55,7 @@ export function sellerBadge(l: Listing) {
 }
 
 export function whatsappLink(l: Listing) {
-  const digits = l.phone.replace(/\D/g, "");
+  const digits = normalizePhone(l.phone) ?? l.phone.replace(/\D/g, "");
   const text = `Hi, I saw your ${l.crop} listing on AgriLink (${l.quantity_kg}kg, RwF ${l.price_expected}/kg in ${l.district}). I'm interested.`;
   return `https://wa.me/${digits}?text=${encodeURIComponent(text)}`;
 }
