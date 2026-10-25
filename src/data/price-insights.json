@@ -251,16 +251,6 @@
   },
   {
     "crop": "Banana for beer",
-    "district": "Nyarugenege",
-    "farmGatePrice": 119.6,
-    "marketPrice": 100.0,
-    "gapPct": -16.4,
-    "reliable": false,
-    "farmGateSamples": 28,
-    "marketSamples": 1
-  },
-  {
-    "crop": "Banana for beer",
     "district": "Huye",
     "farmGatePrice": 202.8,
     "marketPrice": 169.3,
@@ -268,6 +258,16 @@
     "reliable": true,
     "farmGateSamples": 24,
     "marketSamples": 35
+  },
+  {
+    "crop": "Banana for beer",
+    "district": "Nyarugenge",
+    "farmGatePrice": 126.4,
+    "marketPrice": 100.0,
+    "gapPct": -20.9,
+    "reliable": false,
+    "farmGateSamples": 69,
+    "marketSamples": 1
   },
   {
     "crop": "Banana for beer",
@@ -341,16 +341,6 @@
   },
   {
     "crop": "Cassava",
-    "district": "Nyarugenege",
-    "farmGatePrice": 271.0,
-    "marketPrice": 487.5,
-    "gapPct": 79.9,
-    "reliable": false,
-    "farmGateSamples": 5,
-    "marketSamples": 2
-  },
-  {
-    "crop": "Cassava",
     "district": "Nyanza",
     "farmGatePrice": 165.0,
     "marketPrice": 266.2,
@@ -358,6 +348,16 @@
     "reliable": true,
     "farmGateSamples": 25,
     "marketSamples": 50
+  },
+  {
+    "crop": "Cassava",
+    "district": "Nyarugenge",
+    "farmGatePrice": 309.2,
+    "marketPrice": 487.5,
+    "gapPct": 57.7,
+    "reliable": false,
+    "farmGateSamples": 6,
+    "marketSamples": 2
   },
   {
     "crop": "Cassava",
@@ -841,23 +841,13 @@
   },
   {
     "crop": "Cooking banana",
-    "district": "Nyarugenege",
-    "farmGatePrice": 652.3,
-    "marketPrice": 350.0,
-    "gapPct": -46.3,
-    "reliable": false,
-    "farmGateSamples": 11,
-    "marketSamples": 1
-  },
-  {
-    "crop": "Cooking banana",
     "district": "Nyarugenge",
-    "farmGatePrice": 624.0,
-    "marketPrice": 300.0,
-    "gapPct": -51.9,
+    "farmGatePrice": 643.4,
+    "marketPrice": 325.0,
+    "gapPct": -49.5,
     "reliable": false,
-    "farmGateSamples": 5,
-    "marketSamples": 1
+    "farmGateSamples": 16,
+    "marketSamples": 2
   },
   {
     "crop": "Dessert banana",
@@ -1112,12 +1102,12 @@
   {
     "crop": "Dessert banana",
     "district": "Nyarugenge",
-    "farmGatePrice": 218.6,
-    "marketPrice": 180.0,
-    "gapPct": -17.7,
+    "farmGatePrice": 207.0,
+    "marketPrice": 166.7,
+    "gapPct": -19.5,
     "reliable": false,
-    "farmGateSamples": 28,
-    "marketSamples": 2
+    "farmGateSamples": 54,
+    "marketSamples": 3
   },
   {
     "crop": "Dessert banana",
@@ -1138,16 +1128,6 @@
     "reliable": true,
     "farmGateSamples": 67,
     "marketSamples": 51
-  },
-  {
-    "crop": "Dessert banana",
-    "district": "Nyarugenege",
-    "farmGatePrice": 194.6,
-    "marketPrice": 140.0,
-    "gapPct": -28.1,
-    "reliable": false,
-    "farmGateSamples": 26,
-    "marketSamples": 1
   },
   {
     "crop": "Dessert banana",

@@ -19,6 +19,7 @@ export type Database = {
           crop: string
           district: string
           id: string
+          is_sample: boolean
           phone: string
           posted_at: string
           price_expected: number
@@ -32,6 +33,7 @@ export type Database = {
           crop: string
           district: string
           id?: string
+          is_sample?: boolean
           phone: string
           posted_at?: string
           price_expected: number
@@ -45,6 +47,7 @@ export type Database = {
           crop?: string
           district?: string
           id?: string
+          is_sample?: boolean
           phone?: string
           posted_at?: string
           price_expected?: number
