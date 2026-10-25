@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { MessageCircle, Plus, Store, X } from "lucide-react";
 import { AppHeader } from "../components/app-header";
-import { labelClass, PrototypeNotice, selectClass, SellerBadge } from "../components/market-ui";
+import { labelClass, ListingBenchmark, PrototypeNotice, selectClass, SellerBadge } from "../components/market-ui";
 import { CROPS, formatPrice } from "../data/price-insights";
 import { ALL_DISTRICTS, fetchListings, sellerBadge, whatsappLink, type Listing } from "../lib/market";
 
@@ -99,6 +99,7 @@ function MarketPage() {
                     <SellerBadge type={l.seller_type} label={sellerBadge(l)} />
                     {l.is_sample && <SampleBadge />}
                   </div>
+                  <ListingBenchmark crop={l.crop} district={l.district} />
                 </button>
               </li>
             ))}
@@ -130,6 +131,7 @@ function ListingDetail({ listing: l, onClose }: { listing: Listing; onClose: () 
           <Stat label="Price expected" value={`RwF ${formatPrice(Number(l.price_expected))}/kg`} />
         </div>
         <div className="mt-4 flex flex-wrap gap-2"><SellerBadge type={l.seller_type} label={sellerBadge(l)} />{l.is_sample && <SampleBadge />}</div>
+        <div className="mt-4"><ListingBenchmark crop={l.crop} district={l.district} /></div>
         {l.service_tags.length > 0 && (
           <div className="mt-4">
             <p className={labelClass}>Services</p>

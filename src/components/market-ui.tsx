@@ -1,7 +1,21 @@
+import { listingBenchmark } from "../data/price-insights";
+
 export const selectClass =
   "mt-2 min-h-13 w-full rounded-md border border-input bg-surface px-4 text-base font-semibold normal-case tracking-normal text-foreground outline-none focus:border-primary focus:ring-3 focus:ring-ring/20";
 
 export const labelClass = "block text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground";
+
+export function ListingBenchmark({ crop, district }: { crop: string; district: string }) {
+  const benchmark = listingBenchmark(crop, district);
+  return (
+    <div className="text-sm leading-relaxed text-muted-foreground">
+      <p>{benchmark
+        ? `NISR 2025 average: farm-gate ${benchmark.farmGatePrice} · market ${benchmark.marketPrice} RwF/kg`
+        : "No NISR benchmark for this crop and district"}</p>
+      {benchmark?.limitedSample && <p>Limited sample</p>}
+    </div>
+  );
+}
 
 export function PrototypeNotice() {
   return (

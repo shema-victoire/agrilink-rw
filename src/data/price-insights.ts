@@ -43,6 +43,16 @@ export function isCrop(value: unknown): value is Crop {
   return typeof value === "string" && CROPS.includes(value as Crop);
 }
 
+export function listingBenchmark(crop: string, district: string) {
+  const record = isCrop(crop) ? findInsight(crop, district) : undefined;
+  if (!record) return null;
+  return {
+    farmGatePrice: Math.round(record.farmGatePrice),
+    marketPrice: Math.round(record.marketPrice),
+    limitedSample: !record.reliable,
+  };
+}
+
 export function formatPrice(value: number) {
   return new Intl.NumberFormat("en-RW", {
     maximumFractionDigits: 1,
