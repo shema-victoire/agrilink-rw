@@ -4,7 +4,7 @@ import { ArrowLeft, CheckCircle2, Sprout, Truck } from "lucide-react";
 import { AppHeader } from "../components/app-header";
 import { labelClass, PrototypeNotice, selectClass } from "../components/market-ui";
 import { CROPS } from "../data/price-insights";
-import { ALL_DISTRICTS, createListing, SERVICE_TAGS } from "../lib/market";
+import { ALL_DISTRICTS, createListing, normalizePhone, PHONE_ERROR, SERVICE_TAGS } from "../lib/market";
 
 export const Route = createFileRoute("/market/post")({
   head: () => ({

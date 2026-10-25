@@ -95,7 +95,10 @@ function MarketPage() {
                       <p className="text-[0.65rem] font-bold uppercase tracking-[0.12em] text-muted-foreground">per kg</p>
                     </div>
                   </div>
-                  <SellerBadge type={l.seller_type} label={sellerBadge(l)} />
+                  <div className="flex flex-wrap gap-2">
+                    <SellerBadge type={l.seller_type} label={sellerBadge(l)} />
+                    {l.is_sample && <SampleBadge />}
+                  </div>
                 </button>
               </li>
             ))}
@@ -126,7 +129,7 @@ function ListingDetail({ listing: l, onClose }: { listing: Listing; onClose: () 
           <Stat label="Quantity" value={`${l.quantity_kg.toLocaleString()} kg`} />
           <Stat label="Price expected" value={`RwF ${formatPrice(Number(l.price_expected))}/kg`} />
         </div>
-        <div className="mt-4"><SellerBadge type={l.seller_type} label={sellerBadge(l)} /></div>
+        <div className="mt-4 flex flex-wrap gap-2"><SellerBadge type={l.seller_type} label={sellerBadge(l)} />{l.is_sample && <SampleBadge />}</div>
         {l.service_tags.length > 0 && (
           <div className="mt-4">
             <p className={labelClass}>Services</p>
@@ -141,12 +144,26 @@ function ListingDetail({ listing: l, onClose }: { listing: Listing; onClose: () 
             <p className="mt-2 leading-relaxed text-foreground">{l.value_notes}</p>
           </div>
         )}
-        <a href={whatsappLink(l)} target="_blank" rel="noopener noreferrer" className="landing-cta mt-6 flex min-h-12 items-center justify-center gap-2 rounded-lg bg-primary font-bold text-primary-foreground">
-          <MessageCircle className="size-5" aria-hidden="true" /> Contact via WhatsApp
-        </a>
+        {l.is_sample ? (
+          <p className="mt-6 rounded-lg border border-border bg-surface p-4 text-sm text-muted-foreground">
+            This is a sample listing. The contact number is a placeholder, so WhatsApp contact is not available.
+          </p>
+        ) : (
+          <a href={whatsappLink(l)} target="_blank" rel="noopener noreferrer" className="landing-cta mt-6 flex min-h-12 items-center justify-center gap-2 rounded-lg bg-primary font-bold text-primary-foreground">
+            <MessageCircle className="size-5" aria-hidden="true" /> Contact via WhatsApp
+          </a>
+        )}
         <PrototypeNotice />
       </div>
     </div>
+  );
+}
+
+function SampleBadge() {
+  return (
+    <span className="inline-flex rounded-full border border-border bg-muted px-3 py-1 text-xs font-bold text-muted-foreground">
+      Sample listing
+    </span>
   );
 }
 
