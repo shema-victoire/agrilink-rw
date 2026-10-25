@@ -4,7 +4,7 @@ import { ArrowLeft, CheckCircle2, Sprout, Truck } from "lucide-react";
 import { AppHeader } from "../components/app-header";
 import { labelClass, PrototypeNotice, selectClass } from "../components/market-ui";
 import { CROPS } from "../data/price-insights";
-import { ALL_DISTRICTS, createListing, SERVICE_TAGS } from "../lib/market";
+import { ALL_DISTRICTS, createListing, normalizePhone, PHONE_ERROR, SERVICE_TAGS } from "../lib/market";
 
 export const Route = createFileRoute("/market/post")({
   head: () => ({
@@ -41,12 +41,13 @@ function PostPage() {
     const q = Number(qty), p = Number(price);
     if (!Number.isInteger(q) || q <= 0) return setError("Enter a whole quantity in kg.");
     if (!(p > 0)) return setError("Enter a price above 0.");
-    if (phone.replace(/\D/g, "").length < 9) return setError("Enter a valid phone number.");
+    const normalized = normalizePhone(phone);
+    if (!normalized) return setError(PHONE_ERROR);
     setSaving(true);
     try {
       await createListing({
         seller_type: type!, crop, district, quantity_kg: q, price_expected: p,
-        phone: phone.trim().slice(0, 30), value_notes: notes.trim().slice(0, 500) || null,
+        phone: normalized, value_notes: notes.trim().slice(0, 500) || null,
         service_tags: type === "agent" ? tags : [],
       });
       setDone(true);
@@ -107,7 +108,7 @@ function PostPage() {
               </label>
             </div>
             <label className={labelClass}>Phone number
-              <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="+250 7xx xxx xxx" className={inputClass} required />
+              <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="07XXXXXXXX" className={inputClass} required />
               <span className="mt-1 block text-xs font-medium normal-case tracking-normal">Used so buyers can reach you directly</span>
             </label>
             {type === "agent" && (
