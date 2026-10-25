@@ -15,3 +15,5 @@
 - Use URL search parameters for crop and district selection because ranked findings should deep-link directly into a reproducible detail view.
 - Keep `/` as the public intro and `/overview` as the ranked analysis because the product needs a minimal entry screen before the data views.
 - Keep theme selection as a document-level class persisted in browser storage so appearance changes never alter route or selector state.
+- Mark placeholder market listings with the database sample flag and never offer WhatsApp contact for them, because their phone numbers are fake.
+- Store market phone numbers as 2507XXXXXXXX via normalizePhone, because WhatsApp links need the international form.
