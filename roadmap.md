@@ -14,4 +14,4 @@
 - [x] Add Market Feed with filters, listing detail and WhatsApp contact
 - [x] Add Post a Listing flow (Farmer/Agent) saved to the cloud database
 - [ ] Recommend where to start growing the audience
-- [ ] Delete the specified 5,000 kg listing and verify dataset-only benchmarks on market cards and popups
+- [x] Delete the specified 5,000 kg listing and verify dataset-only benchmarks on market cards and popups
