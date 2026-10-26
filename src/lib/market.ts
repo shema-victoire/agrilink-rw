@@ -1,5 +1,5 @@
 import { supabase } from "@/integrations/supabase/client";
-import { priceInsights } from "@/data/price-insights";
+import { isCrop, priceInsights } from "@/data/price-insights";
 
 export const SERVICE_TAGS = [
   "Delivery included",
@@ -32,6 +32,20 @@ export function normalizePhone(input: string): string | null {
   const v = input.replace(/[\s-]/g, "");
   const m = /^(?:\+?250|0)?(7\d{8})$/.exec(v);
   return m ? `250${m[1]}` : null;
+}
+
+export const NOTES_MAX = 300;
+
+/** Returns an error message for the first invalid field, or null when the listing is valid. */
+export function validateListing(v: { crop: string; district: string; qty: string; price: string; notes: string }): string | null {
+  if (!isCrop(v.crop)) return "Choose one of the 4 crops in the list.";
+  if (!ALL_DISTRICTS.includes(v.district)) return "Choose one of the 30 districts in the list.";
+  const q = Number(v.qty.trim());
+  if (!v.qty.trim() || !Number.isInteger(q) || q < 1 || q > 1_000_000) return "Quantity must be a whole number from 1 to 1,000,000 kg.";
+  const p = Number(v.price.trim());
+  if (!v.price.trim() || !Number.isFinite(p) || p < 1 || p > 100_000) return "Price must be from 1 to 100,000 RwF/kg.";
+  if (v.notes.trim().length > NOTES_MAX) return `Notes must be ${NOTES_MAX} characters or fewer.`;
+  return null;
 }
 
 export async function fetchListings(): Promise<Listing[]> {
