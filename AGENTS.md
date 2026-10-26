@@ -18,3 +18,4 @@
 - Keep theme selection as a document-level class persisted in browser storage so appearance changes never alter route or selector state.
 - Mark placeholder market listings with the database sample flag and never offer WhatsApp contact for them, because their phone numbers are fake.
 - Store market phone numbers as 2507XXXXXXXX via normalizePhone, because WhatsApp links need the international form.
+- Enforce listing field limits both in validateListing and as database CHECK constraints, because the public insert endpoint can be called without the form.
