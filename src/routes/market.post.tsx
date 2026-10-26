@@ -47,7 +47,7 @@ function PostPage() {
     try {
       await createListing({
         seller_type: type!, crop, district, quantity_kg: q, price_expected: p,
-        phone: normalized, value_notes: notes.trim().slice(0, 500) || null,
+        phone: normalized, value_notes: notes.trim() || null,
         service_tags: type === "agent" ? tags : [],
       });
       setDone(true);
@@ -125,7 +125,7 @@ function PostPage() {
               </fieldset>
             )}
             <label className={labelClass}>What should a buyer know? (optional)
-              <textarea value={notes} onChange={(e) => setNotes(e.target.value)} maxLength={500} rows={3}
+              <textarea value={notes} onChange={(e) => setNotes(e.target.value)} maxLength={NOTES_MAX} rows={3}
                 placeholder="e.g. freshly harvested, available for pickup any day"
                 className="mt-2 w-full rounded-md border border-input bg-surface p-4 text-base font-medium normal-case tracking-normal text-foreground outline-none focus:border-primary" />
             </label>
