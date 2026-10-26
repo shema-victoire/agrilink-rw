@@ -4,7 +4,7 @@ import { ArrowLeft, CheckCircle2, Sprout, Truck } from "lucide-react";
 import { AppHeader } from "../components/app-header";
 import { labelClass, PrototypeNotice, selectClass } from "../components/market-ui";
 import { CROPS } from "../data/price-insights";
-import { ALL_DISTRICTS, createListing, normalizePhone, PHONE_ERROR, SERVICE_TAGS } from "../lib/market";
+import { ALL_DISTRICTS, createListing, normalizePhone, NOTES_MAX, PHONE_ERROR, SERVICE_TAGS, validateListing } from "../lib/market";
 
 export const Route = createFileRoute("/market/post")({
   head: () => ({
@@ -38,16 +38,16 @@ function PostPage() {
   async function submit(e: React.FormEvent) {
     e.preventDefault();
     setError("");
+    const invalid = validateListing({ crop, district, qty, price, notes });
+    if (invalid) return setError(invalid);
     const q = Number(qty), p = Number(price);
-    if (!Number.isInteger(q) || q <= 0) return setError("Enter a whole quantity in kg.");
-    if (!(p > 0)) return setError("Enter a price above 0.");
     const normalized = normalizePhone(phone);
     if (!normalized) return setError(PHONE_ERROR);
     setSaving(true);
     try {
       await createListing({
         seller_type: type!, crop, district, quantity_kg: q, price_expected: p,
-        phone: normalized, value_notes: notes.trim().slice(0, 500) || null,
+        phone: normalized, value_notes: notes.trim() || null,
         service_tags: type === "agent" ? tags : [],
       });
       setDone(true);
@@ -125,7 +125,7 @@ function PostPage() {
               </fieldset>
             )}
             <label className={labelClass}>What should a buyer know? (optional)
-              <textarea value={notes} onChange={(e) => setNotes(e.target.value)} maxLength={500} rows={3}
+              <textarea value={notes} onChange={(e) => setNotes(e.target.value)} maxLength={NOTES_MAX} rows={3}
                 placeholder="e.g. freshly harvested, available for pickup any day"
                 className="mt-2 w-full rounded-md border border-input bg-surface p-4 text-base font-medium normal-case tracking-normal text-foreground outline-none focus:border-primary" />
             </label>

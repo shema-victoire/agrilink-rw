@@ -2,7 +2,7 @@ import { describe, expect, it, vi } from "vitest";
 
 vi.mock("@/integrations/supabase/client", () => ({ supabase: {} }));
 
-import { ALL_DISTRICTS, normalizePhone } from "./market";
+import { ALL_DISTRICTS, normalizePhone, validateListing } from "./market";
 import { listingBenchmark, priceInsights } from "@/data/price-insights";
 
 describe("normalizePhone", () => {
@@ -39,5 +39,32 @@ describe("listing benchmarks", () => {
   });
   it("does not substitute a different crop when there is no match", () => {
     expect(listingBenchmark("Unknown crop", "Nyanza")).toBeNull();
+  });
+});
+
+describe("post form validation", () => {
+  const ok = { crop: "Cassava", district: "Bugesera", qty: "500", price: "150", notes: "" };
+  it("accepts a valid listing", () => expect(validateListing(ok)).toBeNull());
+  it("rejects a crop outside the 4", () => expect(validateListing({ ...ok, crop: "Maize" })).toMatch(/4 crops/));
+  it("rejects a district outside the 30", () => expect(validateListing({ ...ok, district: "Nyarugenege" })).toMatch(/30 districts/));
+  it("accepts quantity 1 and 1,000,000", () => {
+    expect(validateListing({ ...ok, qty: "1" })).toBeNull();
+    expect(validateListing({ ...ok, qty: "1000000" })).toBeNull();
+  });
+  it("rejects quantity 0 and 1,000,001", () => {
+    expect(validateListing({ ...ok, qty: "0" })).toMatch(/1,000,000 kg/);
+    expect(validateListing({ ...ok, qty: "1000001" })).toMatch(/1,000,000 kg/);
+  });
+  it("accepts price 1 and 100,000", () => {
+    expect(validateListing({ ...ok, price: "1" })).toBeNull();
+    expect(validateListing({ ...ok, price: "100000" })).toBeNull();
+  });
+  it("rejects price 0.5 and 100,001", () => {
+    expect(validateListing({ ...ok, price: "0.5" })).toMatch(/100,000 RwF/);
+    expect(validateListing({ ...ok, price: "100001" })).toMatch(/100,000 RwF/);
+  });
+  it("allows 300-character notes and rejects 301", () => {
+    expect(validateListing({ ...ok, notes: "a".repeat(300) })).toBeNull();
+    expect(validateListing({ ...ok, notes: "a".repeat(301) })).toMatch(/300 characters/);
   });
 });

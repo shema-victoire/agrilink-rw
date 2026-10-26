@@ -15,6 +15,13 @@
       "when": 1792928647814,
       "tag": "0001_add_sample_flag",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1793050691104,
+      "tag": "0002_listing_validation",
+      "breakpoints": true
     }
   ]
 }
